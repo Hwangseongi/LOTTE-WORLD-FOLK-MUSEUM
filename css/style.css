@@ -1,0 +1,606 @@
+/* 전체페이지공통 */
+#wrap {
+    width: 100%;
+    min-width: 1600px;
+}
+#header,
+#visual,
+#container,
+#content,
+#footer {
+    width: 100%;
+}
+
+.inner {
+    width: 1170px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#header {
+    background: #fff;
+}
+#header .inner {
+    height: 120px;
+}
+#header h1 {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+#header .top-menu {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: flex;
+}
+#header .top-menu li {
+    margin-left: 15px;
+}
+#header .top-menu li a {
+    font-size: 15px;
+}
+
+#header .nav {
+    position: absolute;
+    left: 315px;
+    top: 60px;
+}
+#header .nav .gnb {
+    display: flex;
+}
+#header .nav .gnb li {
+    margin-right: 75px;
+}
+#header .nav .gnb li a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#footer {
+    border-top: 1px solid #e0e0e0;
+}
+#footer .inner {
+    height: 330px;
+    padding: 55px 0;
+    background: #fff;
+}
+#footer .inner::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    position: absolute;
+    left: 0;
+    top: 110px;
+}
+#footer p:nth-of-type(1) {
+    margin-bottom: 60px;
+}
+#footer p:nth-of-type(1) a {
+    margin-right: 15px;
+}
+#footer p:nth-of-type(1) a:nth-child(4) {
+    color: red;
+}
+#footer p span {
+    font-size: 16px;
+}
+#footer p span::after {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background: #e0e0e0;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#footer p span:last-child::after {
+    content: none;
+    /* display: none; */
+}
+#footer p:last-of-type {
+    margin-top: 30px;
+}
+#footer .family {
+    position: absolute;
+    right: 0px;
+    top: 140px;
+}
+#footer .family .title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#footer .family .title a {
+    display: block;
+    width: 210px;
+    height: 45px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    line-height: 45px;
+    padding: 0 10px;
+}
+#footer .family .title a::after {
+}
+#footer .family ul {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    display: none;
+}
+#footer .family ul li {
+}
+#footer .family ul li a {
+    display: block;
+    width: 210px;
+    height: 45px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    line-height: 45px;
+    padding: 0 10px;
+    margin-top: -1px;
+    background: #fff;
+}
+
+/* 서브페이지공통 */
+#subVisual {
+}
+#subVisual.banner1 {
+    background-image: url();
+}
+#subVisual.banner2 {
+    background-image: url();
+}
+#subVisual.banner3 {
+    background-image: url();
+}
+#subVisual.banner4 {
+    background-image: url();
+}
+#subVisual.banner5 {
+    background-image: url();
+}
+#subVisual.banner6 {
+    background-image: url();
+}
+
+#subVisual h2 {
+}
+
+.page {
+}
+.page .inner {
+}
+.page h3 {
+}
+
+/* index */
+#visual {
+    height: 720px;
+    position: relative;
+}
+#visual .main-banner {
+    width: 100%;
+    height: 720px;
+    position: relative;
+}
+#visual .main-banner li {
+    width: 100%;
+    height: 720px;
+    /* background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* #visual .main-banner li:nth-child(1) {
+    background-image: url(../민속박물관/main/202005111050316900.jpg);
+    left: 0;
+} */
+/* #visual .main-banner li:nth-child(2) {
+    background-image: url(../민속박물관/main/201902220555000140.jpg);
+} */
+/* #visual .main-banner li:nth-child(3) {
+    background-image: url(../민속박물관/main/202005130508091810.jpg);
+} */
+
+#visual .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+#visual .btn i {
+    font-size: 30px;
+    color: #fff;
+}
+#visual .prev {
+    left: 50px;
+}
+#visual .next {
+    right: 50px;
+}
+
+#visual .paging {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 145px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#visual .paging li {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    /* margin-right: 20px; */
+    margin-left: 18px;
+    margin-top: 12px;
+    box-shadow: 0 0 3px #dcdcdc;
+    cursor: pointer;
+}
+#visual .paging li:last-child {
+    margin-right: 0;
+}
+#visual .paging li.on {
+    background: #fff;
+}
+#visual .paging span {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#visual .paging span i {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/* 페이지명 */
+.main {
+}
+.main .con-box {
+    width: 100%;
+}
+.main .con-box .inner {
+    padding: 110px 0;
+}
+.main .con-box h2 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.main .con-box h2 + p {
+    font-size: 18px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+/* h2 + p 바로 밑에 있는 p만   */
+/* 기본 공통부분 */
+/* 컨텐츠 높이값 작성 X */
+
+.main .con1 {
+    background: #efefef;
+}
+.main .con1 .inner {
+    padding: 0;
+    /* 위에 이너 패딩값 지워주기 */
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 30% 30px;
+    background-image: url(../민속박물관/main/time_icon.png);
+}
+.main .con1 a {
+    display: flex;
+}
+.main .con1 a strong {
+    font-weight: 600;
+    display: block;
+}
+.main .con1 a dl {
+    display: flex;
+    justify-content: space-between;
+}
+.main .con1 a dt {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.main .con1 a dd {
+    font-weight: 600;
+}
+
+.main .con1 dl {
+}
+
+/* //con1 ---------------------------------*/
+
+.main .con2 {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-image: url(../민속박물관/main/mainCon1_bg.jpg);
+}
+.main .con2 h2 {
+    color: #fff;
+}
+.main .con2 h2 + p {
+    color: #fff;
+}
+.main .con2 ul {
+    display: flex;
+    justify-content: space-between;
+}
+.main .con2 ul li {
+    width: 570px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: outline-color 0.4s ease-in-out;
+}
+.main .con2 ul li:hover {
+    outline-color: #fff;
+}
+.main .con2 ul li a {
+}
+.main .con2 ul li a img {
+    width: 100%;
+}
+.main .con2 ul li a strong {
+    display: block;
+    padding: 25px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+/* //con2------------------------------- */
+
+.main .con3 {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-image: url(../민속박물관/main/mainCon2_bg.jpg);
+}
+.main .con3 ul {
+    display: flex;
+    justify-content: space-between;
+}
+.main .con3 ul li {
+    width: 375px;
+    transition: 0.4s ease-in-out;
+}
+.main .con3 ul li a {
+}
+.main .con3 ul li a img {
+    width: 100%;
+}
+.main .con3 ul li a strong {
+    display: block;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    background: #fff;
+}
+.main .con3 ul li:hover a strong {
+    background: rgb(28, 124, 87);
+    color: #fff;
+}
+/* //con3------------------- */
+
+.main .con4 {
+}
+.main .con4 .new-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.main .con4 .box {
+    width: 575px;
+    box-sizing: border-box;
+}
+.main .con4 .left {
+    border: 1px solid #dcdcdc;
+    padding: 35px 40px;
+    position: relative;
+}
+.main .con4 .left h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+/* .main .con4 .left h3 + a {}
+    .main .con4 .left > a {} 둘중 선택 */
+.main .con4 .left > a {
+}
+.main .con4 .left > a strong {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 65px;
+}
+.main .con4 .left > a span {
+    font-size: 16px;
+    color: #888;
+    display: block;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.main .con4 .left ul {
+}
+.main .con4 .left ul li {
+    margin-bottom: 10px;
+}
+.main .con4 .left ul li a {
+    display: inline-block;
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main .con4 .left ul li span {
+    float: right;
+    color: #888;
+    /* postion,flex 해도됨 */
+}
+.main .con4 .left ul li:last-child {
+    margin-bottom: 0;
+}
+
+.main .con4 .left .more {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+}
+.main .con4 .left .more a::after {
+    content: '+';
+    display: inline-block;
+    /* postion,flex 해도됨 */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: green;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.main .con4 .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main .con4 .right ul {
+    display: flex;
+    justify-content: space-between;
+}
+.main .con4 .right ul li {
+}
+.main .con4 .right ul li a {
+    display: block;
+    width: 275px;
+    height: 190px;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 130px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.main .con4 .right ul li a span {
+    font-weight: 700;
+}
+.main .con4 .right ul li:first-child a {
+    background-image: url(../민속박물관/main/mainCon3_util1_img1.png);
+    background-position-y: 45px;
+}
+.main .con4 .right ul li:last-child a {
+    background-image: url(../민속박물관/main/mainCon3_util1_img2.png);
+    background-position-y: 45px;
+}
+/* html에서 img로 해도 됨 */
+
+.main .con4 .right div {
+    width: 100%;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-image: url(../민속박물관/main/mainCon3_banner.jpg);
+    box-sizing: border-box;
+    padding: 40px;
+}
+.main .con4 .right div p:first-child {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.main .con4 .right div .more {
+    font-size: 16px;
+    font-weight: 700;
+}
+.main .con4 .right div .more a {
+    color: #fff;
+}
+.main .con4 .right div .more a i {
+    margin-left: 10px;
+}
+
+/* 서브1 */
+.sub1 {
+}
+.sub1 .inner {
+    height: 1500px;
+    background: #fce4ec;
+}
+
+/* 서브2 */
+.sub2 {
+}
+.sub2 .inner {
+    height: 1500px;
+    background: #b2dfdb;
+}
+
+/* 서브3 */
+.sub3 {
+}
+.sub3 .inner {
+    height: 1500px;
+    background: #e1f5fe;
+}
+
+/* 서브4 */
+.sub4 {
+}
+.sub4 .inner {
+    height: 1500px;
+    background: #ffebee;
+}
+
+/* 서브5 */
+.sub5 {
+}
+.sub5 .inner {
+    height: 1500px;
+    background: #ffe0b2;
+}
+
+/* 서브6 */
+.sub6 {
+}
+.sub6 .inner {
+    height: 1500px;
+    background: #e0f7fa;
+}
